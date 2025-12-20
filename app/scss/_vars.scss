@@ -1,6 +1,9 @@
 $color-accent:#4F4F4F;
 $color-primary: #161515;
 $color-primary: #4F4F4F;
+$bg-primary: #CDCDCD;
+$line: rgb(255, 255, 255);
+
 
 %inter-400{
        font-family: 'Inter-Regular', sans-serif;
@@ -28,3 +31,8 @@ $color-primary: #4F4F4F;
 }
 
 
+%button-reset {
+  padding: 0;
+  border: none;
+  cursor: pointer;     
+}
