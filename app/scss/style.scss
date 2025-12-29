@@ -10,6 +10,15 @@ body {
     color: vars.$color-accent;
 }
 
+.promo {
+    background-color: vars.$bg-primary;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: vars.$color-primary;
+    padding: 7px 0 9px;
+}
+
 .header {
     padding: 20px 0 40px;
     text-transform: uppercase;
@@ -61,7 +70,7 @@ body {
 
 .footer {
     font-size: 16px;
-    color: vars.$line;;
+    color: vars.$line;
 
   &__menu-list {
     display: flex;
@@ -149,6 +158,91 @@ body {
         left: -21px;
     }
   }
+}
 
-  &__bottom-link {}
+.top{
+    min-height: 90vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &__title{
+        font-size: 75px;
+        margin-bottom: 33px;
+        padding: 262px 0 0px;
+        max-width: 519px;
+        @extend %lora-400;
+        line-height: 1.2;
+    }
+    &__inner {
+        text-transform: uppercase;
+    }
+    &__link{
+        display: inline-block;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: vars.$color-primary;
+        padding: 12px 28px;
+        border-radius: 3px;
+    }
+}
+
+.new-collection {
+    background-image: url(../images/decor.svg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: 258px -2%;
+  &__inner {
+    padding: 150px 0;
+    display: flex;
+  }
+  &__content {
+    padding: 75px 0 40px;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    margin-bottom: 50px;
+    font-size: 45px;
+    @extend %lora-400;
+  }
+  &__text {
+    color: vars.$color-accent;
+  }
+    &__text + .new-collection__text{
+    padding-top: 20px;
+  }
+  &__btn {
+    display: inline-block;
+    font-size: 16px;
+    color: vars.$color-accent;
+    border: 1px solid vars.$color-primary;
+    padding: 10px 65px;
+    margin-top: auto;   
+    align-self: flex-start;
+  }
+  
+  &__img {
+    margin-top: 75px;
+  }
+
+  &__box {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+  }
+  &__box-img {
+    position: absolute;
+    top: 0;
+    left: -75px;
+    max-width: fit-content;
+  }
+  &__caption {
+    width: 290px;
+    margin-top: auto;
+    margin-bottom: 40px;
+    color: vars.$color-primary;
+  }
 }

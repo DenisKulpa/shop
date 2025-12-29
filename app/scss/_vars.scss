@@ -1,6 +1,6 @@
 $color-accent:#4F4F4F;
 $color-primary: #161515;
-$color-primary: #4F4F4F;
+$color-secondary: #4F4F4F;
 $bg-primary: #CDCDCD;
 $line: rgb(255, 255, 255);
 
@@ -23,6 +23,11 @@ $line: rgb(255, 255, 255);
 %opensans-700{
        font-family: 'OpenSans-Bold', sans-serif;
        font-weight: 700;
+}
+
+%lora-400{
+       font-family: 'Lora-Regular', sans-serif;
+       font-weight: 400;
 }
 
 %lora-500{
