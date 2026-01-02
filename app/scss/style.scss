@@ -112,7 +112,7 @@ body {
     border: none;
     border-bottom: 1px solid vars.$line;
     color: #fff;
-    background-color: #0F2B41;
+    background-color: vars.$bg-secondary;
     padding: 1px 30px 5px 0;
   }
 
@@ -244,5 +244,64 @@ body {
     margin-top: auto;
     margin-bottom: 40px;
     color: vars.$color-primary;
+  }
+}
+
+
+.join-us {
+  color: #fff;
+  background-color: vars.$bg-secondary;
+  &__inner {
+    display: flex;
+    gap: 40px;
+  }
+  &__img {
+    max-width: 779px;
+  }
+  &__box {
+     padding: 75px 0;
+  }
+  &__title {
+    text-transform: uppercase;
+    @extend %lora-400;
+    margin-bottom: 20px;
+    font-size: 45px;
+  }
+  &__text {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  &__input {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid vars.$line;
+    background-color: vars.$bg-secondary;
+    color: #fff;
+    padding-bottom: 10px;
+    @extend %opensans-400;
+    cursor: pointer;
+      &::placeholder {
+    color: #fff;
+    opacity: 1; 
+    }
+  }
+  &__input + .join-us__input {
+    padding-top: 10px;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: vars.$color-primary;
+    text-transform: uppercase;
+    padding: 12px;
+    color: #fff;
+    border: none;
+  }
+  &__form-caption {
+    font-size: 11px;
   }
 }
