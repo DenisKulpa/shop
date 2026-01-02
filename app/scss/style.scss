@@ -350,3 +350,48 @@ body {
     border: 1px solid vars.$color-primary;
   }
 }
+
+.our-advantages {
+  background-color: vars.$bg-secondary;
+  color: #fff;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  &__img{
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+  }
+  &__inner {
+    padding: 60px 18px 34px 0;
+    margin-left: auto;
+  }
+  &__title {
+    @extend %lora-400;
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+  &__list {
+    column-count: 2;
+    column-gap: 80px;
+  }
+  &__item {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 30px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.5em;
+        width: 6px;
+        height: 6px;
+        background-color: #fff;
+        border-radius: 50%;
+  }
+  }
+}
+
