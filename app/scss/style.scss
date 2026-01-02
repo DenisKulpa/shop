@@ -305,3 +305,48 @@ body {
     font-size: 11px;
   }
 }
+
+.beckham {
+    padding: 90px 0 230px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    gap: 40px;
+  }
+  &__content {
+    max-width: 500px;
+  }
+  &__title {
+    @extend %lora-400;
+    margin-bottom: 20px;
+    font-size: 45px;
+    text-transform: uppercase;
+  }
+  &__text {
+    color: vars.$color-accent;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  &__caption {
+    margin: 70px 0;
+    max-width: 417px;
+    @extend %opensans-400;
+    font-size: 20px;
+    padding: 20px 27px;
+    color: #fff;
+    background-color: vars.$bg-secondary;
+  }
+  &__box {
+    text-align: center;
+  }
+  &__img {
+    margin-bottom: 40px;
+  }
+  &__link {
+    display:block;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid vars.$color-primary;
+  }
+}
