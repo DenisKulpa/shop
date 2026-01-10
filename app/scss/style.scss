@@ -395,3 +395,101 @@ body {
   }
 }
 
+.our-blog {
+    padding: 150px 0 90px;
+  &__inner {
+    margin: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 330px;
+    gap: 20px;
+  }
+  &__link {
+    @extend %lora-400;
+    margin-bottom: 5px;
+    color: vars.$color-accent;
+  }
+
+  &__content {}
+  &__title {
+    @extend %lora-400;
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+  &__text {
+    max-width: 542px;
+    margin-bottom: 50px;
+    color: vars.$color-secondary;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+  &__box-right {
+    grid-row: span 2;
+  }
+  &__box-img {
+    margin-bottom: 20px;
+  }
+  &__btn-link {
+    border: 1px solid vars.$color-primary;
+    padding: 16px 98px;
+    align-self: self-start;
+  }
+  &__box-date {
+    margin-bottom: 70px;
+    font-size: 16px;
+  }
+  &__box-bottom {}
+}
+
+.appointment {
+    padding: 50px 0 100px;
+  &__title {
+    text-align: center;
+    @extend %lora-400;
+    font-size: 45px;
+    margin-bottom: 77px;
+    color: vars.$color-primary;  
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  &__form-title {
+    @extend %lora-400;
+    font-size: 30px;
+    margin-bottom: 80px;
+  }
+  &__form-text {
+    @extend %opensans-400;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  &__input {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border: none;
+    color: vars.$color-secondary;
+    border-bottom: 1px solid vars.$color-primary;
+    &::placeholder {
+        color: vars.$color-secondary;
+    } 
+  }
+  &__btn {
+    margin-top: auto;
+    color: #fff;
+    background-color: vars.$color-primary;
+    padding: 12px;
+    border-radius: 3px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &__img {}
+}
