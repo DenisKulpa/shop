@@ -493,3 +493,126 @@ body {
   }
   &__img {}
 }
+
+.collections-top {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.breadcrumbs {
+    margin: 50px 0 80px;
+  &__list {
+    display: flex;
+    gap: 14px;
+  }
+  &__item {
+    position: relative;
+  }
+
+  &__item + .breadcrumbs__item::before {
+    content: '/';
+    position: absolute;
+    left: -10px; 
+  }
+  &__link {}
+}
+
+.collections-main {
+    .breadcrumbs {
+        margin: 50px 0 80px;
+    }
+}
+
+.collections {
+  &__title {
+     text-align: center;
+    @extend %lora-400;
+    font-size: 54px;
+    margin-bottom: 60px;
+    color: vars.$color-primary;  
+  }
+  &__inner {
+    display: grid;
+    grid-template-areas:
+    "aa aa ab bb"
+    "aa aa cb cc"
+    "da db dd dd"
+    "ea eb dd dd"
+    "fa fb fc fd";
+    gap: 40px;
+  }
+  &__item {
+    position: relative;
+    &:nth-child(1)  { grid-area: aa; }
+    &:nth-child(2)  { grid-area: ab; } 
+    &:nth-child(3)  { grid-area: bb; } 
+    &:nth-child(4)  { grid-area: cb; } 
+    &:nth-child(5)  { grid-area: cc; } 
+    &:nth-child(6)  { 
+        grid-area: da;
+        margin-top: -130px;
+     } 
+    &:nth-child(7)  { 
+        grid-area: db;
+        margin-top: -130px;
+     } 
+    &:nth-child(8)  { grid-area: dd; }
+    &:nth-child(9)  { grid-area: ea; } 
+    &:nth-child(10) { grid-area: eb; } 
+    &:nth-child(11) { grid-area: fa; } 
+    &:nth-child(12) { grid-area: fb; } 
+    &:nth-child(13) { grid-area: fc; } 
+    &:nth-child(14) { grid-area: fd; } 
+  }
+  &__like {
+    top: 10px;
+    right: 6px;
+    position: absolute;
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+.pagination {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: vars.$color-primary;
+    font-size: 16pxs;
+    gap: 2px;
+
+  &__list {
+    display: flex;
+    gap: 2px;
+  }
+  &__link {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link--active {
+    color: #fff;
+    background-color: vars.$color-accent;
+  }
+
+
+  &__arrow-disable {
+    display: none;
+  }
+
+  &__arrow {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
